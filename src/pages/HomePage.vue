@@ -1,4 +1,5 @@
 <template>
+<div class="">
 <div class="w-full bg-cover" :style="{ 'background-image': 'url(' + myImage + ')', 'background-repeat': 'no-repeat', 'background-position': 'center' }">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <nav class="">
@@ -323,7 +324,10 @@
     </footer>
 
 </div>
+</div>
 </template>
+
+<!--hero section -->
 
 <script setup>
 // import plumbing from '@/assets/plumbing-desktop.jpg'
