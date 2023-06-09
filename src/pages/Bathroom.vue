@@ -78,7 +78,7 @@
                 <div class="py-1">
                   <MenuItem v-slot="{ active }">
                     <a
-                      href="/electrical"
+                      href="#"
                       :class="[
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm',
@@ -102,7 +102,7 @@
                 <div class="py-1">
                   <MenuItem v-slot="{ active }">
                     <a
-                      href="/bathroom"
+                      href="#"
                       :class="[
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm',
@@ -227,7 +227,7 @@
                       <div class="py-1">
                         <MenuItem v-slot="{ active }">
                           <a
-                            href="electrical"
+                            href="/electrical"
                             :class="[
                               active
                                 ? 'bg-gray-100 text-gray-900'
@@ -303,7 +303,7 @@
 
     <div class="relative isolate overflow-hidden pt-14">
       <img
-        src="../assets/plumbing.avif"
+        src="../assets/bathroom.avif"
         alt=""
         class="absolute inset-0 -z-10 h-full w-full object-cover"
       />
@@ -336,10 +336,10 @@
         />
       </div>
       <div class="pl-10 max-w-2xl py-32 sm:py-48 lg:py-56">
-        <h1 class="text-2xl font-bold tracking-tight text-gray-500 sm:text-6xl">
-          Plumbing <br />Services
+        <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          Bathroom <br />Remodelling
         </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-500">
+        <p class="mt-6 text-lg leading-8 text-gray-900">
           TopKrono – The role of a plumber is like that of a rescuer. When you
           face any plumbing issue at your home, office or shop, you want to
           acquire a magic wand which could fix it instantly.
@@ -447,7 +447,7 @@
     >
       <img
         class="ml-10 h-full w-full object-cover"
-        src="../assets/check.avif"
+        src="../assets/bath2.avif"
         alt=""
       />
     </div>
@@ -523,7 +523,7 @@
         </div>
       </div>
       <div>
-        <img src="../assets/cta.jpg" class="h-[28rem] w-[40rem]" />
+        <img src="../assets/bath3.avif" class="h-[28rem] w-[40rem]" />
       </div>
     </div>
   </div>
