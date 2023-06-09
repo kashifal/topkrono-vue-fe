@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "@/pages/HomePage.vue";
 import Plumbing from "@/pages/Plumbing.vue";
-import Electrical from "@/pages/ELectrical.vue";
+import Electrical from "@/pages/Electrical.vue";
 import Bathroom from "@/pages/Bathroom.vue";
 
 const router = createRouter({
