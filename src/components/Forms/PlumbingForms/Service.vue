@@ -1,5 +1,5 @@
 <template>
-  <div>Form 1 Plumbing</div>
+  <div></div>
 </template>
 
 <script setup></script>
