@@ -685,6 +685,7 @@
       </footer>
     </div>
   </div>
+
 </template>
 
 <!--hero section -->
@@ -692,9 +693,8 @@
 <script setup>
 // import plumbing from '@/assets/plumbing-desktop.jpg'
 import myImage from "../assets/plumbing-desktop.jpg";
-import logoImage from "../assets/puls-logo-wo-dots.svg";
 import infoImage from "../assets/plumbing-info.jpg";
-import boyImage from "../assets/plumbing-mobile.jpg";
+import boyImage from "../assets/plumbing-mobile.jpg"; 
 </script>
 
 <style scoped></style>
