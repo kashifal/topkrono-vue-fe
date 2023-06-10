@@ -3,6 +3,7 @@ import HomePage from "@/pages/HomePage.vue";
 import Plumbing from "@/pages/Plumbing.vue";
 import Electrical from "@/pages/Electrical.vue";
 import Bathroom from "@/pages/Bathroom.vue";
+import PlumbingIndex from "@/pages/PlumbingIndex.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: "/bathroom",
       name: "bathroom",
       component: Bathroom,
+    },
+    {
+      path: "/plumbing",
+      name: "plumbing",
+      component: PlumbingIndex,
     },
   ],
 });
