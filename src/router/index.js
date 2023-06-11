@@ -5,6 +5,7 @@ import Electrical from "@/pages/Electrical.vue";
 import Bathroom from "@/pages/Bathroom.vue";
 import PlumbingIndex from "@/pages/PlumbingIndex.vue";
 import NewPage from "@/pages/NewPage.vue";
+import Electricalmode from "@/pages/Electricmode.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -30,14 +31,19 @@ const router = createRouter({
       component: Bathroom,
     },
     {
-      path: "/plumbing",
-      name: "plumbing",
+      path: "/plumbin",
+      name: "plumbin",
       component: PlumbingIndex,
     },
     {
         path: "/new",
         name: "newpage",
         component: NewPage,
+      },
+      {
+        path: "/electricmode",
+        name: "electricmode",
+        component:Electricalmode ,
       },
   ],
 });
