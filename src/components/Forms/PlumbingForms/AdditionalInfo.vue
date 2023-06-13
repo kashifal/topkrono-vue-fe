@@ -70,6 +70,63 @@
             </button>
           </div>
         </div>
+
+        <div class="max-w-3xl mx-auto space-y-3 p-4">
+          <div class="mt-4">
+            <p class="text-2xl text-gray-600 font-semibold">
+              Plumbing Services
+            </p>
+          </div>
+          <div class="border rounded-xl shadow-sm p-4">
+            <div class="">
+              <ul class="">
+                <li
+                  class="flex items-center justify-between gap-4 my-2"
+                  v-for="service in servicesData"
+                  :key="service.id"
+                >
+                  <span class="w-[60%]" v-if="service.value > 0">{{
+                    service.text
+                  }}</span>
+                  <span
+                    class="w-[20px] h-[20px] flex items-center justify-center rounded-full bg-gray-50"
+                    v-if="service.value > 0"
+                    >{{ service.value }}</span
+                  >
+                  <span
+                    class="w-[20%] flex items-end justify-end"
+                    v-if="service.value > 0"
+                    >${{ service.price * service.value }}</span
+                  >
+                </li>
+              </ul>
+              <ul class="space-y-4 mt-6">
+                <li>
+                  <div class="flex items-center justify-between">
+                    <p>Estimated cost (Taxes included)</p>
+                    <p class="text-lg font-bold">$ {{ totalCost }}</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flex items-center justify-between">
+                    <p>Estimated servicee time</p>
+                    <p class="text-lg font-bold">2 hours</p>
+                  </div>
+                </li>
+                <li class="border-t border-gray-200 p-4 text-gray-500">
+                  <p>
+                    "Price is based on a regular replacement / Installation. If
+                    supplementary details and pictures are provided or if extra
+                    work is needed (usually for first-time installation), the
+                    technician will be able to analyze the request and discuss
+                    any further charges with you (including parts) before
+                    starting the job."
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -110,6 +167,12 @@
               class="bg-gray-600 px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
             >
               Skip
+            </button>
+            <button
+              @click="nextForm"
+              class="bg-[#2563eb] px-5 ml-4 py-2 text-white font-medium rounded-md hover:opacity-75"
+            >
+              Continue
             </button>
           </div>
         </div>
@@ -541,18 +604,38 @@
         </div>
         <div class="border rounded-xl shadow-sm p-4">
           <div class="">
-            <p class="font-bold text-gray-800">Toilet installation</p>
+            <ul class="">
+              <li
+                class="flex items-center justify-between gap-4 my-2"
+                v-for="service in servicesData"
+                :key="service.id"
+              >
+                <span class="w-[60%]" v-if="service.value > 0">{{
+                  service.text
+                }}</span>
+                <span
+                  class="w-[20px] h-[20px] flex items-center justify-center rounded-full bg-gray-50"
+                  v-if="service.value > 0"
+                  >{{ service.value }}</span
+                >
+                <span
+                  class="w-[20%] flex items-end justify-end"
+                  v-if="service.value > 0"
+                  >${{ service.price * service.value }}</span
+                >
+              </li>
+            </ul>
             <ul class="space-y-4 mt-6">
               <li>
                 <div class="flex items-center justify-between">
                   <p>Estimated cost (Taxes included)</p>
-                  <p class="text-lg font-bold">$ 160.50</p>
+                  <p class="text-lg font-bold">$ {{ totalCost }}</p>
                 </div>
               </li>
               <li>
                 <div class="flex items-center justify-between">
                   <p>Estimated servicee time</p>
-                  <p class="text-lg font-bold">02 hourS</p>
+                  <p class="text-lg font-bold">2 hours</p>
                 </div>
               </li>
               <li class="border-t border-gray-200 p-4 text-gray-500">
@@ -575,7 +658,7 @@
 
 <script setup>
 import NavLite from "@/components/navbar-Lite.vue";
-import { ref } from "vue";
+import { ref, computed } from "vue";
 const currentStep = ref(0);
 import { v4 as uuidv4 } from "uuid";
 import { Calendar, DatePicker } from "v-calendar";
@@ -604,31 +687,37 @@ const servicesData = ref([
     id: uuidv4(),
     text: "Toilet replacement",
     value: 0,
+    price: 10,
   },
   {
     id: uuidv4(),
     text: "Complete vanity replacement",
     value: 0,
+    price: 12,
   },
   {
     id: uuidv4(),
     text: "Vanity faucet replacement",
     value: 0,
+    price: 15,
   },
   {
     id: uuidv4(),
     text: "Sink replair",
     value: 0,
+    price: 22,
   },
   {
     id: uuidv4(),
     text: "Shower Tub_faucet installation",
     value: 0,
+    price: 13,
   },
   {
     id: uuidv4(),
     text: "Water heater replacement",
     value: 0,
+    price: 30,
   },
 ]);
 
@@ -681,6 +770,12 @@ const nextForm = () => {
   console.log(addressInfo.value);
   console.log(AddDetailsAndPic.value);
 };
+
+const totalCost = computed(() => {
+  return servicesData.value.reduce((total, service) => {
+    return total + service.price * service.value;
+  }, 0);
+});
 </script>
 
 <style scoped>
