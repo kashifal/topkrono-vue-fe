@@ -652,6 +652,13 @@ import { ChevronDownIcon, CheckCircleIcon } from "@heroicons/vue/20/solid";
 import { ref, defineComponent, h } from "vue";
 import { Dialog, DialogPanel } from "@headlessui/vue";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+import Navbar from "../components/Navbar.vue";
+
+
+
+
+
+
 
 const mobileMenuOpen = ref(false);
 

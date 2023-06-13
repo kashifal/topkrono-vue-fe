@@ -1,5 +1,7 @@
 <template>
   <div class="">
+      <Navbar />
+  
     <div
       class="w-full bg-cover"
       :style="{
@@ -9,142 +11,7 @@
       }"
     >
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <nav class="">
-          <div class="relative flex h-16 justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center md:hidden">
-              <!-- Mobile menu button -->
-              <button
-                type="button"
-                class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span class="sr-only">Open main menu</span>
-                <svg
-                  class="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-                <svg
-                  class="hidden h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-            <div
-              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
-            >
-              <div class="hidden md:flex flex-shrink-0 items-center">
-                <img
-                  class="block h-8 w-auto"
-                  :src="logoImage"
-                  alt="Your Company"
-                />
-              </div>
-              <div class="hidden md:ml-6 md:flex sm:space-x-8">
-                <!-- Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm text-gray-900 whitespace-nowrap"
-                  >Services</a
-                >
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm text-gray-900 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap"
-                  >Memberships</a
-                >
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm text-gray-900 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap"
-                  >Info hub</a
-                >
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm text-gray-900 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap"
-                  >Pricing</a
-                >
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm text-gray-900 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap"
-                  >Become a tech</a
-                >
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm text-gray-900 hover:border-gray-300 hover:text-gray-700 whitespace-nowrap"
-                  >Real estate agents</a
-                >
-              </div>
-            </div>
-            <div
-              class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-            >
-              <!-- Profile dropdown -->
-              <div class="bg-blue-600 rounded-full hover:bg-white py-1 px-5">
-                <a
-                  href="#"
-                  class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 font-medium text-white hover:text-blue-600"
-                  >Login</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Mobile menu, show/hide based on menu state. -->
-          <div class="md:hidden" id="mobile-menu">
-            <div class="space-y-1 pb-4 pt-2">
-              <!-- Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
-              <a
-                href="#"
-                class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-base font-medium text-indigo-700"
-                >Services</a
-              >
-              <a
-                href="#"
-                class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >Memberships</a
-              >
-              <a
-                href="#"
-                class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >Info hub</a
-              >
-              <a
-                href="#"
-                class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >Pricing</a
-              >
-              <a
-                href="#"
-                class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >Become a tech</a
-              >
-              <a
-                href="#"
-                class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >Real estate agents</a
-              >
-            </div>
-          </div>
-        </nav>
+      
         <section class="py-44">
           <div class="space-y-6 w-auto md:w-1/4 px-4">
             <h3 class="text-5xl font-bold text-[#52575a]">
@@ -173,7 +40,10 @@
             <p class="text-gray-700">Where can we help?</p>
           </div>
           <div class="flex flex-wrap items-center justify-center gap-4">
-            <a href="">
+            <router-link
+            to="plumbin"
+            
+             href="">
               <div
                 class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
               >
@@ -188,30 +58,17 @@
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
+                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 http://localhost:5173/plumbing0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
                   />
                 </svg>
                 <p>Kichen</p>
               </div>
-            </a>
+            </router-link>
             <a href="">
               <div
                 class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/></svg>
                 <p>Bathroom</p>
               </div>
             </a>
@@ -219,20 +76,7 @@
               <div
                 class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M9 14.5h6M17 4H7m10 0a3 3 0 0 0 3-3V.5H7.5a3.5 3.5 0 1 0 0 7H20V7a3 3 0 0 0-3-3ZM3.5 23.5h17c0-4 .934-7.79 2.722-11.217l.278-.533v-.25H.5v.25l.278.533C2.566 15.71 3.5 19.5 3.5 23.5Z"/></svg>
                 <p>Laundry</p>
               </div>
             </a>
@@ -240,20 +84,7 @@
               <div
                 class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3.78 2.5L21.5 20.22l-1.27 1.28L18 19.27V20h-8l-2-2H5v-3H3v3H1v-8h2v3h2v-3l1.87-1.86L2.5 3.77L3.78 2.5M20 9v3h-2V8h-6V6h3V4H7.82l15 15H23V9h-3Z"/></svg>
                 <p>Pumps</p>
               </div>
             </a>
@@ -695,6 +526,9 @@
 import myImage from "../assets/plumbing-desktop.jpg";
 import infoImage from "../assets/plumbing-info.jpg";
 import boyImage from "../assets/plumbing-mobile.jpg"; 
+import Navbar from "../components/Navbar.vue";
+
+
 </script>
 
 <style scoped></style>
