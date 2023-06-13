@@ -18,8 +18,8 @@ const router = createRouter({
     },
     {
       path: "/",
-      name: "",
-      component: Plumbing,
+      name: "home",
+      component: Dashboard,
     },
     {
       path: "/electricalmode",
@@ -45,11 +45,6 @@ const router = createRouter({
       path: "/electrical",
       name: "electrical",
       component: Electricalmode,
-    },
-    {
-      path: "/Dashboard",
-      name: "Dashboard",
-      component: Dashboard,
     },
   ],
 });
