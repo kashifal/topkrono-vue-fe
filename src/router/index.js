@@ -14,7 +14,7 @@ const router = createRouter({
     {
       path: "/",
       name: "home",
-      component: HomePage,
+      component: Dashboard,
     },
     {
       path: "/plumbing",
@@ -37,20 +37,20 @@ const router = createRouter({
       component: PlumbingIndex,
     },
     {
-        path: "/new",
-        name: "newpage",
-        component: NewPage,
-      },
-      {
-        path: "/electricmode",
-        name: "electricmode",
-        component:Electricalmode ,
-      },
-      {
-        path: "/Dashboard",
-        name: "Dashboard",
-        component:Dashboard ,
-      },
+      path: "/new",
+      name: "newpage",
+      component: NewPage,
+    },
+    {
+      path: "/electricmode",
+      name: "electricmode",
+      component: Electricalmode,
+    },
+    {
+      path: "/Dashboard",
+      name: "Dashboard",
+      component: Dashboard,
+    },
   ],
 });
 
