@@ -12,18 +12,18 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: "/",
-      name: "home",
-      component: Dashboard,
-    },
-    {
       path: "/plumbing",
       name: "plumbing",
+      component: HomePage,
+    },
+    {
+      path: "/",
+      name: "",
       component: Plumbing,
     },
     {
-      path: "/electrical",
-      name: "electrical",
+      path: "/electricalmode",
+      name: "electricalmode",
       component: Electrical,
     },
     {
@@ -42,8 +42,8 @@ const router = createRouter({
       component: NewPage,
     },
     {
-      path: "/electricmode",
-      name: "electricmode",
+      path: "/electrical",
+      name: "electrical",
       component: Electricalmode,
     },
     {
