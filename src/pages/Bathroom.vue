@@ -595,6 +595,7 @@
             </div>
           </div>
         </div>
+        
         <div class="mt-10 xl:mt-0">
           <h3 class="text-sm font-semibold leading-6 text-gray-900">
             Subscribe to our newsletter
