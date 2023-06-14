@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white sticky top-0">
+    <div class="bg-white sticky top-0 shadow-lg">
         <nav class=" max-w-7xl mx-auto">
             <div class="relative flex h-16 justify-between">
               <div
@@ -49,7 +49,7 @@
               >
                 <div class="hidden md:flex flex-shrink-0 items-center">
                   <img
-                    class="block h-8 w-auto"
+                    class="block h-32 w-auto"
                     :src="LogoImage"
                     alt="Your Company"
                   />
@@ -72,21 +72,23 @@
                         class="block border-l-4 border-indigo-500 bg-indigo-50 py-2 pl-3 pr-4 text-sm font-medium text-indigo-700"
                         >TV Mounting</a
                       >
-                      <a
-                        href="#"
-                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                        >Home Appliances</a
-                      >
+                     
                       <a
                         href="#"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                         >Handyman Services</a
                       >
+                     
                       <a
                         href="#"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
                         >IPhone Repair</a
                       >
+                      <router-link
+                        to="/appliance"
+                        class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
+                        >Appliances Installation </router-link
+                      > 
                       <router-link
                         to="/electrical"
                         class="block border-l-4 border-transparent py-2 pl-3 pr-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
@@ -130,10 +132,10 @@
                 class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
               >
                 <!-- Profile dropdown -->
-                <div class="bg-blue-600 rounded-full hover:bg-white py-1 px-5">
+                <div class="bg-[#224386] rounded-full hover:bg-white py-1 px-5">
                   <a
                     href="#"
-                    class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 font-medium text-white hover:text-blue-600"
+                    class="inline-flex items-center border-b-2 border-transparent px-1 pt-1 font-medium text-white hover:text-[#224386]"
                     >Login</a
                   >
                 </div>
@@ -221,7 +223,7 @@
 
 
 <script setup>
-        import LogoImage from "../assets/puls-logo-wo-dots.svg";
+        import LogoImage from "../assets/transparentlogo.png";
         import { ref } from "vue";
 
 

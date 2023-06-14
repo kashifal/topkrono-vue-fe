@@ -4,27 +4,25 @@
   
     <div
       class="w-full bg-cover"
-      :style="{
-        'background-image': 'url(' + myImage + ')',
-        'background-repeat': 'no-repeat',
-        'background-position': 'center',
-      }"
     >
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 my-24">
       
-        <section class="py-44">
+        <section class=" flex items-center justify-between">
           <div class="space-y-6 w-auto md:w-1/4 px-4">
             <h3 class="text-5xl font-bold text-[#52575a]">
-              Plumbing made simple
+              <span class="text-[#224386]">Plumbing</span> made simple
             </h3>
             <p class="text-lg text-gray-500">
               Quality repairs and replacements done right the first time.
             </p>
             <button
-              class="bg-blue-600 py-5 px-8 font-medium text-white whitespace-nowrap"
+              class="bg-[#224386] py-5 px-8 font-medium text-white whitespace-nowrap rounded rounded  "
             >
               Schedule now
             </button>
+          </div>
+          <div class="bg-gradient-to-r from-[#224386] to-blue-500 p-6 rounded-3xl w-1/2">
+            <img class="rounded-md" :src="myImage" alt="">
           </div>
         </section>
       </div>
@@ -32,9 +30,9 @@
     <!-- section appointment -->
     <div class="mx-auto max-w-7xl py-12 px-2 sm:px-6 lg:px-8">
       <section class="my-12">
-        <div class="flex flex-wrap gap-4 items-center justify-between">
-          <div class="">
-            <h3 class="text-xl font-semibold text-gray-700">
+        <div class=" gap-4 items-center justify-between">
+          <div class="text-center my-12">
+            <h3 class="text-xl font-semibold text-gray-700 ">
               Book an appointment today.
             </h3>
             <p class="text-gray-700">Where can we help?</p>
@@ -45,36 +43,23 @@
             
              href="">
               <div
-                class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
+                class="text-gray-600 border border-gray-300 text-white bg-[#224386] hover:bg-white hover:text-[#224386] p-4 flex flex-col justify-center items-center w-32 rounded"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 http://localhost:5173/plumbing0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-                  />
-                </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="m34 28l10-4M4 28h30l-.439 3.802A7 7 0 0 1 26.607 38H11.393a7 7 0 0 1-6.954-6.198L4 28Zm15-18v10m-8-8v6m16-6v6"/></svg>
                 <p>Kichen</p>
               </div>
             </router-link>
             <a href="">
               <div
-                class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
+                class="text-[#224386] border border-gray-300 hover:bg-gray-300  p-4 flex flex-col justify-center items-center w-32 rounded"
               >
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 14 14"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="M.5 8.5h13v2a3 3 0 0 1-3 3h-7a3 3 0 0 1-3-3v-2h0Zm7-6a2 2 0 0 0-4 0v6m4-4v1"/></svg>
                 <p>Bathroom</p>
               </div>
             </a>
             <a href="">
               <div
-                class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
+                class="text-gray-600 border border-gray-300 text-white bg-[#224386] hover:bg-white hover:text-[#224386] p-4 flex flex-col justify-center items-center w-32 rounded"
               >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" d="M9 14.5h6M17 4H7m10 0a3 3 0 0 0 3-3V.5H7.5a3.5 3.5 0 1 0 0 7H20V7a3 3 0 0 0-3-3ZM3.5 23.5h17c0-4 .934-7.79 2.722-11.217l.278-.533v-.25H.5v.25l.278.533C2.566 15.71 3.5 19.5 3.5 23.5Z"/></svg>
                 <p>Laundry</p>
@@ -82,7 +67,7 @@
             </a>
             <a href="">
               <div
-                class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
+                class="text-[#224386] border border-gray-300 hover:bg-gray-300  p-4 flex flex-col justify-center items-center w-32 rounded"
               >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M3.78 2.5L21.5 20.22l-1.27 1.28L18 19.27V20h-8l-2-2H5v-3H3v3H1v-8h2v3h2v-3l1.87-1.86L2.5 3.77L3.78 2.5M20 9v3h-2V8h-6V6h3V4H7.82l15 15H23V9h-3Z"/></svg>
                 <p>Pumps</p>
@@ -90,7 +75,7 @@
             </a>
             <a href="">
               <div
-                class="text-gray-600 border border-gray-300 p-4 flex flex-col justify-center items-center w-32"
+                class="text-gray-600 border border-gray-300 text-white bg-[#224386] hover:bg-white hover:text-[#224386] p-4 flex flex-col justify-center items-center w-32 rounded"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,10 +98,10 @@
           </div>
         </div>
       </section>
-      <section class="my-24">
+      <section class="my-48">
         <div class="grid grid-cols-1 md:grid-cols-2 space-y-6">
-          <div class="">
-            <img :src="infoImage" alt="" />
+          <div class="bg-gray-300 w-fit p-6 rounded-3xl ">
+            <img class="rounded" :src="infoImage" alt="" />
           </div>
           <div class="space-y-8 px-4 md:px-32">
             <div class="flex gap-x-4">
@@ -213,11 +198,11 @@
         </div>
       </section>
 
-      <section class="my-12">
+      <section class="">
         <!-- section for caresol -->
       </section>
       <section class="my-12">
-        <div class="border flex flex-wrap items-center justify-between">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center justify-between">
           <div class="space-y-6 w-33% py-10 px-16">
             <h3 class="text-2xl font-bold text-[#52575a]">
               Ready to getstarted?
@@ -226,13 +211,13 @@
               Quality repairs and replacements done right the first time.
             </p>
             <button
-              class="bg-blue-600 py-5 px-8 font-medium text-white whitespace-nowrap"
+              class="bg-[#224386] py-5 px-8 font-medium text-white whitespace-nowrap rounded"
             >
               Schedule now
             </button>
           </div>
-          <div class="w-66%">
-            <img class="object-cover h-full w-full" :src="boyImage" alt="" />
+          <div class="bg-gray-300 w-fit p-6 rounded-3xl">
+            <img class="object-cover rounded" :src="boyImage" alt="" />
           </div>
         </div>
       </section>
@@ -407,7 +392,7 @@
                 <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    class="flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    class="flex w-full items-center justify-center bg-[#224386] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Subscribe
                   </button>
@@ -416,7 +401,7 @@
               <div class="flex space-x-6 md:order-2 mt-6">
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Facebook</span>
                   <svg
@@ -434,7 +419,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Instagram</span>
                   <svg
@@ -452,7 +437,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Twitter</span>
                   <svg
@@ -468,7 +453,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">GitHub</span>
                   <svg
@@ -486,7 +471,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">YouTube</span>
                   <svg
@@ -523,8 +508,8 @@
 
 <script setup>
 // import plumbing from '@/assets/plumbing-desktop.jpg'
-import myImage from "../assets/plumbing-desktop.jpg";
-import infoImage from "../assets/plumbing-info.jpg";
+import myImage from "../assets/plumber.avif";
+import infoImage from "../assets/dealplumber.png";
 import boyImage from "../assets/plumbing-mobile.jpg"; 
 import Navbar from "../components/Navbar.vue";
 

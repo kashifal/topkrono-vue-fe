@@ -20,7 +20,7 @@
                 <div class="gap-6 w-32 flex items-center justify-between">
                   <button
                     @click="decrementService(service)"
-                    class="border text-xs border-blue-600 rounded-full p-1 hover:bg-blue-600 hover:bg-opacity-30"
+                    class="border text-xs border-blue-600 rounded-full p-1 hover:bg-[#224386] hover:bg-opacity-30"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@
                   <span class="text-lg text-gray-700">{{ service.value }}</span>
                   <button
                     @click="incrementService(service)"
-                    class="bg-blue-600 text-xs rounded-full p-1 hover:bg-opacity-75"
+                    class="bg-[#224386] text-xs rounded-full p-1 hover:bg-opacity-75"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
           <div class="text-end mt-12">
             <button
               @click="nextForm"
-              class="bg-blue-600 px-8 py-2 text-white font-medium rounded-md hover:opacity-75"
+              class="bg-[#224386] px-8 py-2 text-white font-medium rounded-md hover:opacity-75"
             >
               Continue
             </button>
@@ -214,7 +214,7 @@
           <div class="flex flex-wrap justify-center items-center gap-4 mt-24">
             <a href="#">
               <div
-                class="border p-2 text-gray-500 text-xs rounded-md hover:bg-blue-600 hover:text-white"
+                class="border p-2 text-gray-500 text-xs rounded-md hover:bg-[#224386] hover:text-white"
               >
                 {{ date }}
               </div>
@@ -223,7 +223,7 @@
           <div class="text-end">
             <button
               @click="nextForm"
-              class="bg-blue-600 px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
+              class="bg-[#224386] px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
             >
               Continue
             </button>
@@ -318,7 +318,7 @@
                     value="text"
                     v-model="contactInfo.preferred_contact_way"
                     name="default-radio"
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
+                    class="w-4 h-4 text-[#224386] bg-gray-100 border-gray-300 focus:ring-blue-500"
                   />
                   <label
                     for="default-radio-1"
@@ -334,7 +334,7 @@
                     value="phone"
                     v-model="contactInfo.preferred_contact_way"
                     name="default-radio"
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
+                    class="w-4 h-4 text-[#224386] bg-gray-100 border-gray-300 focus:ring-blue-500"
                   />
                   <label
                     for="default-radio-2"
@@ -350,7 +350,7 @@
                     value="email"
                     v-model="contactInfo.preferred_contact_way"
                     name="default-radio"
-                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"
+                    class="w-4 h-4 text-[#224386] bg-gray-100 border-gray-300 focus:ring-blue-500"
                   />
                   <label
                     for="default-radio-2"
@@ -363,7 +363,7 @@
             <div class="text-end">
               <button
                 @click="nextForm"
-                class="bg-blue-600 px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
+                class="bg-[#224386] px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
               >
                 Continue
               </button>
@@ -450,7 +450,7 @@
           <div class="text-end">
             <button
               @click="nextForm"
-              class="bg-blue-600 px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
+              class="bg-[#224386] px-5 py-2 text-white font-medium rounded-md hover:opacity-75"
             >
               Submit request
             </button>

@@ -7,7 +7,7 @@ import PlumbingIndex from "@/pages/PlumbingIndex.vue";
 import NewPage from "@/pages/NewPage.vue";
 import Electricalmode from "@/pages/Electricmode.vue";
 import Dashboard from "@/pages/Dashboard.vue";
-
+import Appliance from "@/pages/Appliance.vue";
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -17,30 +17,22 @@ const router = createRouter({
       component: HomePage,
     },
     {
+      path: "/appliance",
+      name: "appliance",
+      component: Appliance,
+    },
+    {
       path: "/",
       name: "home",
       component: Dashboard,
     },
-    {
-      path: "/electricalmode",
-      name: "electricalmode",
-      component: Electrical,
-    },
-    {
-      path: "/bathroom",
-      name: "bathroom",
-      component: Bathroom,
-    },
+
     {
       path: "/plumbin",
       name: "plumbin",
       component: PlumbingIndex,
     },
-    {
-      path: "/new",
-      name: "newpage",
-      component: NewPage,
-    },
+   
     {
       path: "/electrical",
       name: "electrical",
