@@ -5,24 +5,24 @@
     <header> 
        
       <div
-        class="w-full bg-cover"
+        class="w-full  bg-cover shadow-lg "
         :style="{
           'background-image': 'url(' + FamilyImage + ')',
           'background-repeat': 'no-repeat',
-          'background-position': 'center',
+          'background-position': 'top',
         }"
       > 
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
          <!--NAVABR  -->
          <!-- //// -->
-          <section class="pb-64 pt-24">
-            <div class="space-y-6">
-              <h3 class="text-3xl md:text-6xl font-bold pr-56">
-                Your go-to expert for all your home care needs
+          <section class="pb-56 pt-64">
+            <div class="space-y-6 text-end">
+              <h3 class="text-white text-3xl md:text-6xl font-bold w-auto sm:w-1/2 ml-auto   text-start">
+                Your go-to expert for all your <span class="text-[#224386]">home care</span>  needs
               </h3>
 
               <button
-                class="bg-blue-600 py-5 px-16 font-bold text-xl rounded-3xl drop-shadow-5xl leading-7 text-white whitespace-nowrap"
+                class="bg-[#224386] hover:bg-white hover:text-[#224386] py-5 px-16 font-bold text-xl rounded-3xl drop-shadow-5xl leading-7 text-white whitespace-nowrap"
               >
                 Book A Service
               </button>
@@ -36,7 +36,7 @@
       <!-- COMPANY LINKS -->
       <section>
         <div class="">
-          <div class="bg-white py-24 sm:py-32">
+          <div class="bg-white py-20 sm:pb-32">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
               <h2
                 class="text-center text-lg font-semibold leading-8 text-gray-900"
@@ -92,7 +92,7 @@
           class="my-14 bg-gray-100 rounded-3xl grid grid-cols-1 md:grid-cols-2 items-center px-8 py-12 shadow-md gap-8"
         >
           <div class="">
-            <p class="text-3xl font-bold">Introducing Puls Whole Hom</p>
+            <p class="text-3xl font-bold">Introducing <span class="text-[#224386]">ServicePro</span>  Whole Hom</p>
             <p class="text-lg">
               <span class="font-semibold leading-7"
                 >The perfect way to protect & upgrade your home</span
@@ -854,7 +854,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -901,7 +901,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -948,7 +948,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -995,7 +995,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -1042,7 +1042,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -1089,7 +1089,7 @@
                   </div>
                   <div class="">
                     <a
-                      class="font-medium bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-opacity-80"
+                      class="font-medium bg-[#224386] text-white px-3 py-2 rounded-md hover:bg-opacity-80"
                       href=""
                       >Book now</a
                     >
@@ -2682,7 +2682,7 @@
           </div>
           <div class="w-full text-center my-12">
             <a
-              class="font-medium bg-white text-blue-600 px-6 py-3 rounded-md hover:bg-opacity-80"
+              class="font-medium bg-white text-[#224386] px-6 py-3 rounded-md hover:bg-opacity-80"
               href=""
               >Book a service</a
             >
@@ -2860,7 +2860,7 @@
                 <div class="mt-4 sm:ml-4 sm:mt-0 sm:flex-shrink-0">
                   <button
                     type="submit"
-                    class="flex w-full items-center justify-center bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    class="flex w-full items-center justify-center bg-[#224386] px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Subscribe
                   </button>
@@ -2869,7 +2869,7 @@
               <div class="flex space-x-6 md:order-2 mt-6">
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Facebook</span>
                   <svg
@@ -2887,7 +2887,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Instagram</span>
                   <svg
@@ -2905,7 +2905,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">Twitter</span>
                   <svg
@@ -2921,7 +2921,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">GitHub</span>
                   <svg
@@ -2939,7 +2939,7 @@
                 </a>
                 <a
                   href="#"
-                  class="p-1 rounded-full text-white hover:text-gray-500 bg-blue-600"
+                  class="p-1 rounded-full text-white hover:text-gray-500 bg-[#224386]"
                 >
                   <span class="sr-only">YouTube</span>
                   <svg
@@ -2972,7 +2972,7 @@
 </template>
 
 <script setup>
-import FamilyImage from "../assets/1920.png";
+import FamilyImage from "../assets/homeprofile.jpg";
 import LogoImage from "../assets/vue.svg";
 import Handyman from "../assets/tool-box-big.png";
 import IPhone from "../assets/iphone-big.png";

@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen">
     <nav class="sticky top-0">
-      <div class="h-16 bg-blue-600 px-4 flex items-center">
+      <div class="h-16 bg-[#224386] px-4 flex items-center">
         <div class="">
           <img class="" :src="WhiteLogo" alt="" />
         </div>
